@@ -1,0 +1,81 @@
+body {
+    background: url(../img/SAVE_20200323_215207.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    cursor: url(../img/20-07-08-palu1.png), auto;
+}
+
+.container:active {
+    cursor: url(../img/20-05-36-palu2.png), auto;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    background-color: yellow;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 600px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: -80px;
+}
+
+.tanah {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    overflow: hidden;
+    float: left;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, .3));
+}
+
+.tanah::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: url(../img/18-49-52-tanah.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -25px;
+}
+
+.tikus {
+    width: 100%;
+    height: 100%;
+    background: url(../img/18-50-12-tikus.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 100px;
+    transition: top 0.3s;
+}
+
+.tanah.muncul .tikus {
+    top: -15px;
+}
+
+.mulai {
+    margin: auto;
+    display: inline-block;
+}
+
+.sidebar {
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: coral;
+}
